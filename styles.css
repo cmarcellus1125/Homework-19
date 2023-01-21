@@ -167,6 +167,7 @@ a:hover{
     color: #FFFFFF;
     background-color: transparent;
     width: fit-content;
+    text-decoration: none;
 }
 .modal-content a:hover{
     background: #1C209E;
