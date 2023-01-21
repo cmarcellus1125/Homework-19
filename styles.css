@@ -1,0 +1,579 @@
+body{
+    background-color: #252525;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: #465B65;
+    padding-left: 5.5%;
+    padding-right: 5.5%;
+}
+
+/* Chris Marcellus Header Style */
+
+.logotxt{
+    display: inline;
+    float: left;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+/* White Center Logo */
+
+.logo_white{
+    display:flex;
+    height:60px;
+    width:auto;
+}
+
+/* Header buttons */
+
+.header-button{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    margin-inline:31px;
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height:29px;
+    color: white;
+}
+
+.header-button:hover{
+    background: #1C209E;
+    color: white;
+}
+
+.hbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Text styles */
+
+h1{
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: #FFFFFF;
+}
+h2{
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    /* line-height: 38px; */
+    color: #FFFFFF;
+}
+p{
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    /* line-height: 29px; */
+    color: #FFFFFF;
+}
+a{
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF; 
+}
+a:hover{
+    color: #19ABB8;
+}
+.underline{
+    text-decoration-line: underline;
+}
+
+/* Modal style */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 15%;
+
+}
+
+.modal-content{
+    background-color: #465b65;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 25px;
+    width:fit-content;
+    height: fit-content;
+}
+.modal-content p{
+    width: 320px;
+}
+.modal-content .line{
+    width: 330px;
+}
+.modal-content h3{
+    margin: 10px auto;
+}
+.modal-content .logotxt{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.close {
+    color: #ffffff;
+    align-self: flex-end;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+  .close:hover{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+/* Section Styles */
+
+.work{
+    display: flex;
+    margin: 5.5%;
+    flex-direction: column;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/* Name/Title seperating line */
+
+.line{
+    border: 2px solid #FFFFFF;
+    width: 620px;
+}
+
+/* Left About text */
+.ab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* align-content: center; */
+    gap: 13%;
+    margin-inline: 11%;
+    
+}
+.profile{
+    width: 640px;
+}
+.profiletxt{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+/* work section box */
+
+.inspectrum, .usda, .christmasbox{
+    display: flex;
+    width: 1440px;
+    height: 620px;
+    margin-top: 72px;
+    background-size: cover;
+}
+.inspectrum{
+    justify-content: flex-end;
+    background-image: url(images/inspectrum2x.png);
+    background-repeat:no-repeat;
+    background-position: left;
+}
+.usda{
+    justify-content: flex-start;
+    background-image: url(images/usda2x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.christmasbox{
+    justify-content: flex-end;
+    background-image: url(images/christmasbox2x.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.workflex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.workbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 480px;
+    height: 440px;
+    background: #465B65;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 55px 83px 55px;
+    padding: 36px;
+}
+button{
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: fit-content;
+}
+button:hover{
+    background: #1C209E;
+    color: white;
+}
+button:active{
+    background: #1C209E;
+    color: white;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Skill section */
+
+.skills{
+   display: flex;
+   flex-direction: row; 
+   justify-content: space-evenly;
+}
+.skillbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 20px;
+}
+
+/* Tools section */
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.tool-list{
+    display: flex;
+    flex-direction: column;
+}
+.tool-icon{
+    display: flex;
+    /* height: 340px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.programs{
+    width: 60px;
+}
+.msoffice{
+    width: 48px;
+}
+
+/* Footer Style */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background: #465B65;
+    padding: 5px 5.5%;
+}
+.fleft{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    width: 60px;
+    height: 60px;
+}
+
+.socialmedia{
+    margin-inline: 10px;
+    height: 24px;
+}
+
+
+/*////////// 1440px //////////*/
+
+@media only screen and (max-width: 1440px){
+    .ab{
+        gap: 5%;
+    }
+    .inspectrum, .usda, .christmasbox{
+        width: 88%;
+        height: auto;
+    }
+    .workbox{
+        width: 37.5%;
+        height: auto;
+    }
+    .profiletxt{
+        width: 50%;
+    }
+    .line{
+        width: 390px;
+    }
+}
+
+/*////////// 1220px //////////*/
+
+@media only screen and (max-width: 1220px){
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+    .logotxt{
+        display: flex;
+        float: none;
+        text-align: none;
+
+    }
+    .logo_white{
+        display: flex;
+        position: static;
+        margin-left: 20px;
+        margin-right: 0%;
+        height: 60px;
+        width: auto;
+    }
+    .line{
+        width: 620px;
+    }
+    .ab{
+        flex-direction: column;
+        gap: 0;
+        margin-inline: 0;
+    }
+    .profile{
+        width: 80%;
+    }
+    .profiletxt{
+        width: auto;
+        align-items: center;
+        margin-inline: 5.5%;
+    }
+    .work{
+        justify-content: center;
+    }
+}
+
+/*////////// 1125px //////////*/
+
+@media only screen and (max-width: 1125px){
+    header{
+        height: 180px;
+    }
+    .right{
+        margin-left: 20%;
+    }
+    footer{
+        height: auto;
+    }
+}
+
+/*////////// mobile //////////*/
+
+@media only screen and (max-width: 800px){
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 120px;
+        }
+    .logotxt{
+        display: flex;
+        float: none;
+        text-align: none;
+        padding-top: 17px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .logo_white{
+        display: flex;
+        position: static;
+        margin-left: 20px;
+        margin-right: 0%;
+        height: 40px;
+        width: auto;
+    }
+    .header-button{
+        margin-inline: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    footer{
+        align-items: flex-start;
+        padding: 0px 5.5%;
+        height: 120px;
+    }
+    
+    .logo{
+        width: 40px;
+        height: 40px;
+        /* padding-top: 8px; */
+        align-self: center;
+    }
+  
+    
+    h1{
+        font-size: 40px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    h2{
+        font-size: 32px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    p{
+        font-size: 16px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .line{
+        width: 324px;
+    }
+    .ab{
+        flex-direction: column;
+        gap: 0;
+        margin-inline: 0;
+    }
+    .profile{
+        width: 80%;
+    }
+    .profiletxt{
+        width: auto;
+        align-items: center;
+        margin-inline: 5.5%;
+    }
+    .work{
+        justify-content: center;
+    }
+    .inspectrum, .usda, .christmasbox{
+        width: 88%;
+        height: auto;
+        margin-top: 22px;
+        margin-bottom: 230px;
+        background-size:cover;
+        align-items: center;
+    }
+    .inspectrum{
+        justify-content: center;
+        background-image: url(images/inspectrum-mobile.png);
+         background-position: left;
+    }
+    .usda{
+        justify-content: center;
+        background-image: url(images/usda-mobile.png);
+         background-position: right;
+    
+    }
+    .christmasbox{
+        justify-content: center;
+        background-image: url(images/christmasbox-mobile.png);
+         background-position: left;
+    }
+    .workbox{
+        justify-content: space-between;
+        width: 83%;
+        height: auto;
+        margin: 0px;
+        margin: 0px 0px 0px;
+        padding: 22px;
+        translate: 0px 230px;
+    }
+    button{
+        font-size: 20px;
+    }
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tools{
+        justify-content: center;
+        margin-top: 22px;
+        gap: 20px;
+    }
+    .tool-list h3{
+        font-size: 24px;
+    }
+    .tool-icon{
+        height: 250px;
+        gap: 20px 24px;
+    }
+    .programs{
+        width: 40px;
+    }
+    .msoffice{
+        width: 36px;
+    }
+}
