@@ -17,7 +17,7 @@
             <div class="hbuttons">
                 <button class="header-button">About</button>
                 <button class="header-button">Contact</button>
-                <button id="resume" class="header-button">Resume</button>
+                <button id="resume" class="header-button resume">Resume</button>
             </div>
         </header>
 
@@ -25,14 +25,14 @@
 
         <div id="resumeModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close ex">&times;</span>
                 <div class="logotxt">
                     Chris Marcellus
                 </div>
                 <div class="line"></div>
                 <h3>Work Resume</h3>
                 <p>Would you like to download Chris Marcellus's resume?</p>
-                <a href="CMarcellus_resume.pdf" target="_blank" download>CMarcellus_resume.pdf</a>
+                <a class="dbutton" href="CMarcellus_resume.pdf" target="_blank" download>CMarcellus_resume.pdf</a>
             </div>
         </div>
 
@@ -45,6 +45,7 @@
                     <div class="line"></div>
                     <h2>UI/UX Designer</h2>
                     <p>I come from a theatre family, a background of telling stories, so that is what I try to convey in my designs. I initially started with stagecraft and found that my skill could easily transfer over to UI/UX as it is the same thought process; giving users the best experience. From there, I easily pick up and learn programs such as Figma, Miro, Adobe XD; a pattern dating back to my youth. With these tools acquired, I have created what you see in this portfolio.</p>
+                    <button id="resume" class="downloadResume resume">Download Resume</button>
                 </div>
                 <img src="images/Rectangle 2.png" class="profile" alt="a Profile Picture of Chris Marcellus">
             </div>
@@ -152,6 +153,7 @@
                 
         </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
