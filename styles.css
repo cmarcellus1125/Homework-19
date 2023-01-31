@@ -51,7 +51,7 @@ header{
     color: white;
 }
 
-.header-button:hover{
+.header-button:hover:enabled{
     background: #1C209E;
     color: white;
 }
@@ -295,14 +295,20 @@ button{
     background-color: transparent;
     width: fit-content;
 }
-button:hover{
+button:hover:enabled{
     background: #1C209E;
     color: white;
+    cursor: pointer;
 }
-button:active{
+button:active:enabled{
     background: #1C209E;
     color: white;
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+button:disabled{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
 }
 
 /* Skill section */
