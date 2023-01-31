@@ -31,7 +31,3 @@ $(document).on("click",".dbutton",function(e){
   $(modal).fadeOut('300');
 });
 
-// dbtn.onclick = function () {
-//   $(modal).fadeOut('300');
-//   console.log("click")
-// };
